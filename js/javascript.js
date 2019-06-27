@@ -2,7 +2,7 @@
 //chargement du script après la page HTML
 window.onload = (function () {
 
-	//récupération des élément du html
+	//récupération des éléments du html
 	let btnValid = document.getElementById("valid");
 	let messageEr = document.getElementById("messageError");
 	let nomEr = document.getElementById("nomError");
@@ -22,6 +22,7 @@ window.onload = (function () {
 		let message = document.getElementById("message");
 		let selectedType = document.getElementById("selectType");
 
+		// Nombre de champs valides
 		let nbChampOK = 0;
 
 		//conditions à respecter pour le déclenchement de la fonction. Ici instancier client issu de la classe Client.
