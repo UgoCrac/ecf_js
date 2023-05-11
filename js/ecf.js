@@ -16,6 +16,7 @@ let selectedType = document.getElementById("selectType");
 let selectEr = document.getElementById("selectError");
 let imgPh = document.getElementById("image");
 let photoError = document.getElementById("photoError");
+let refresh = document.getElementById("btnReset");
 const input = new Array;
 let regEx = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let texte = ["Votre demande concerne",
@@ -106,7 +107,9 @@ btnValid.addEventListener("click", (event) => {
     console.log(leMessage);
 })
 
-
+refresh.addEventListener("click", () => {
+    location.reload();
+})
 
 
 
